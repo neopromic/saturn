@@ -19,7 +19,7 @@ Saturn é um SaaS projetado para oferecer uma experiência intuitiva e eficiente
 
 - **Frontend**: [React](https://reactjs.org/), [Next.js](https://nextjs.org/)
 - **Backend**: [Node.js](https://nodejs.org/), [Express](https://expressjs.com/)
-- **Banco de Dados**: [PostgreSQl](https://www.postgresql.org/)
+- **Banco de Dados**: [MongoDB](https://www.mongodb.com/)
 - **Autenticação**: [Auth0](https://auth0.com/)
 - **Hospedagem e Infraestrutura**: [Vercel](https://vercel.com/), [AWS](https://aws.amazon.com/)
 - **Outras**: [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/)
@@ -50,3 +50,42 @@ Saturn foi construído com a escalabilidade em mente. Com uma arquitetura basead
    ```bash
    git clone https://github.com/seu-usuario/saturn.git
    cd saturn
+   ```
+
+2. Instale as dependências:
+   ```bash
+   pnpm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   pnpm run dev
+   ```
+
+4. Abra seu navegador e vá para `http://localhost:3000`.
+
+## 📚 Documentação
+
+Para saber mais sobre como usar o Saturn e explorar todas as suas funcionalidades, consulte nossa [documentação completa](#).
+
+## 🤝 Contribuição
+
+Nós adoramos contribuições! Se você deseja contribuir com o Saturn, siga os passos abaixo:
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Faça commit das suas alterações (`git commit -m 'Adiciona nova feature'`).
+4. Faça o push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
+
+## 📧 Contato
+
+Se você tiver alguma dúvida, sugestão ou feedback, sinta-se à vontade para entrar em contato conosco:
+
+- **Email**: suporte@saturn.com
+- **Website**: [www.saturn.com](http://www.saturn.com)
+- **LinkedIn**: [Saturn no LinkedIn](#)
+
+## 📝 Licença
+
+Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
