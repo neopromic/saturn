@@ -82,9 +82,9 @@ Nós adoramos contribuições! Se você deseja contribuir com o Saturn, siga os 
 
 Se você tiver alguma dúvida, sugestão ou feedback, sinta-se à vontade para entrar em contato conosco:
 
-- **Email**: suporte@saturn.com
-- **Website**: [www.saturn.com](http://www.saturn.com)
-- **LinkedIn**: [Saturn no LinkedIn](#)
+- **Email**: creattek.team+support-saturn@gmail.com
+- **Website**: [saturn.is-a.dev](http://www.saturn.is-a.dev/)
+
 
 ## 📝 Licença
 
