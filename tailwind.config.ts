@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -52,20 +52,19 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        'blue-charcoal': {
-        '50': '#f0f4ff',
-        '100': '#dfe8ff',
-        '200': '#b8d0ff',
-        '300': '#7aaaff',
-        '400': '#3480fc',
-        '500': '#095fee',
-        '600': '#0045cc',
-        '700': '#0036a5',
-        '800': '#043188',
-        '900': '#0a2b70',
-        '950': '#020817',
-    },
-    
+        "blue-charcoal": {
+          "50": "#f0f4ff",
+          "100": "#dfe8ff",
+          "200": "#b8d0ff",
+          "300": "#7aaaff",
+          "400": "#3480fc",
+          "500": "#095fee",
+          "600": "#0045cc",
+          "700": "#0036a5",
+          "800": "#043188",
+          "900": "#0a2b70",
+          "950": "#020817",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -81,14 +80,19 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "infinity-scroll": "infinite-scroll 10s linear infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
