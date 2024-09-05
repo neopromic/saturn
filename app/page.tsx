@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Cover } from "@/components/ui/cover";
 import {
   Tooltip,
   TooltipContent,
@@ -6,6 +7,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import { PencilIcon } from "lucide-react";
+import { CircleHelp } from "lucide-react";
 
 export default function Home() {
   return (
@@ -33,13 +35,22 @@ export default function Home() {
             </TooltipContent>
           </Tooltip>
         </p>
-        <Button variant={"blue"} className="">
-          Experimente Gratuitamente
-        </Button>
+        <div className="flex items-center gap-4 ">
+          <Button variant={"blue"} className="">
+            Experimente Gratuitamente
+          </Button>
+          <Button
+            variant={"secondary"}
+            className="hover:font-bold trasition-all "
+          >
+            Ver demonstração
+          </Button>
+        </div>
       </section>
-
       <section className="bg-muted p-4 flex flex-col justify-center items-center space-y-2">
-        <h2 className="font-bold text-xl text-center">Recursos poderosos</h2>
+        <Cover>
+          <h2 className="font-bold text-xl text-center px-4">Recursos poderosos</h2>
+        </Cover>
         <p className="text-center text-muted-foreground max-w-md">
           Nosso editor de arrastar e soltar, combinado com uma biblioteca de
           modelos incríveis, torna a criação de landing pages tão fácil quanto
@@ -82,6 +93,47 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col justify-center items-center space-y-4 py-6">
+        <div className="flex flex-col space-y-2 justify-center items-center ">
+          <CircleHelp className="text-blue-charcoal-500" size={58} />
+
+          <h1 className="text-3xl max-w-md md:max-w-full lg:max-w-full text-center font-semibold tracking-tight">
+            Como nossa plataforma funciona?
+          </h1>
+        </div>
+        <div className="flex flex-col space-y-2 items-center justify-center ">
+          <div className="rounded-full p-4 text-xl bg-blue-charcoal-500 text-blue-charcoal-50 size-12 flex items-center justify-center ">
+            1
+          </div>
+          <h2 className="text-lg font-medium">
+            Escolha um template {"(Ou use nossa IA)"}.
+          </h2>
+          <p className="max-w-64 text-center text-muted-foreground text-sm">
+            Comece com um de nossos templates profissionais ou um em branco pra
+            criar algo incrível do zero!
+          </p>
+        </div>
+        <div className="flex flex-col space-y-2 items-center justify-center ">
+          <div className="rounded-full p-4 text-xl bg-blue-charcoal-500 text-blue-charcoal-50 size-12 flex items-center justify-center ">
+            2
+          </div>
+          <h2 className="text-lg font-medium">Custumize do seu jeito.</h2>
+          <p className="max-w-64 text-center text-muted-foreground text-sm">
+            Use nosso editor arrasta e solta pra adicionar seu conteúdo,
+            imagens, e sua marca.
+          </p>
+        </div>
+        <div className="flex flex-col space-y-2 items-center justify-center ">
+          <div className="rounded-full p-4 text-xl bg-blue-charcoal-500 text-blue-charcoal-50 size-12 flex items-center justify-center ">
+            3
+          </div>
+          <h2 className="text-lg font-medium">Publique seu site.</h2>
+          <p className="max-w-64 text-center text-muted-foreground text-sm">
+            Com um clique, sua landing page está ativa e pronta pra converter.
+          </p>
         </div>
       </section>
       <section className="mt-12 p-4">
