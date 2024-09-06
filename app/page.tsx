@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Cover } from "@/components/ui/cover";
 import {
@@ -6,17 +7,24 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import { PencilIcon } from "lucide-react";
+import { Bug, PencilIcon } from "lucide-react";
 import { CircleHelp } from "lucide-react";
 
 export default function Home() {
   return (
     <section>
-      <section className="lg:flex lg:flex-col lg:justify-center lg:items-center px-4 space-y-2 py-12">
-        <h1 className="text-4xl tracking-tighter font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-background select-none">
+      <section className="flex flex-col px-4 space-y-4 py-12 lg:h-[80vh] h-[55vh] justify-center items-center">
+        <Badge className="gap-2">
+          <Bug
+            size={16}
+            className="dark:text-blue-charcoal-500 text-blue-charcoal-400"
+          />
+          Faça parte de nosso programa de testers.
+        </Badge>
+        <h1 className="text-4xl tracking-tighter font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-background select-none text-center lg:max-w-lg">
           Crie Landing Pages de Alta Conversão em Minutos
         </h1>
-        <p className="text-muted-foreground text-sm">
+        <p className="text-muted-foreground text-sm text-center max-w-80">
           Dê vida às suas ideias e aumente suas conversões com facilidade. Nossa
           ferramenta permite que você construa páginas poderosas e envolventes
           com um simples{" "}
@@ -35,7 +43,7 @@ export default function Home() {
             </TooltipContent>
           </Tooltip>
         </p>
-        <div className="flex items-center gap-4 ">
+        <div className="flex items-center justify-center gap-4 ">
           <Button variant={"blue"} className="">
             Experimente Gratuitamente
           </Button>
@@ -47,9 +55,11 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <section className="bg-muted p-4 flex flex-col justify-center items-center space-y-2">
+      <section className="bg-muted px-4 py-12 flex flex-col justify-center items-center space-y-2">
         <Cover>
-          <h2 className="font-bold text-xl text-center px-4">Recursos poderosos</h2>
+          <h2 className="font-bold text-xl text-center px-4">
+            Recursos poderosos
+          </h2>
         </Cover>
         <p className="text-center text-muted-foreground max-w-md">
           Nosso editor de arrastar e soltar, combinado com uma biblioteca de
@@ -96,7 +106,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center space-y-4 py-6">
+      <section className="flex flex-col justify-center items-center space-y-4 py-12">
         <div className="flex flex-col space-y-2 justify-center items-center ">
           <CircleHelp className="text-blue-charcoal-500" size={58} />
 
@@ -120,7 +130,7 @@ export default function Home() {
           <div className="rounded-full p-4 text-xl bg-blue-charcoal-500 text-blue-charcoal-50 size-12 flex items-center justify-center ">
             2
           </div>
-          <h2 className="text-lg font-medium">Custumize do seu jeito.</h2>
+          <h2 className="text-lg font-medium">Personalize do seu jeito.</h2>
           <p className="max-w-64 text-center text-muted-foreground text-sm">
             Use nosso editor arrasta e solta pra adicionar seu conteúdo,
             imagens, e sua marca.
@@ -137,8 +147,9 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-12 p-4">
-        <p className="text-muted-foreground text-xs flex flex-col justify-center items-center">
-          © 2024 Saturn Landing Page Builder. Todos os direitos reservados.
+        <p className="text-muted-foreground text-xs flex flex-col justify-center items-center text-center">
+          © 2024 Saturn Landing Page Builder | Creattek. Todos os direitos
+          reservados.
         </p>
         <div className="flex flex-row justify-center items-center">
           <Button variant={"link"} size={"sm"} className="text-xs">
