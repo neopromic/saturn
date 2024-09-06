@@ -93,6 +93,7 @@
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
+    "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "1.0.0",
@@ -124,6 +125,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4",
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
