@@ -21,7 +21,7 @@ export default function Home() {
           />
           Faça parte de nosso programa de testers.
         </Badge>
-        <h1 className="text-4xl tracking-tighter font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-background select-none text-center lg:max-w-lg">
+        <h1 className="text-4xl tracking-tighter font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/50 select-none text-center lg:max-w-lg">
           Crie Landing Pages de Alta Conversão em Minutos
         </h1>
         <p className="text-muted-foreground text-sm text-center max-w-80">
