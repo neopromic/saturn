@@ -1,3 +1,4 @@
+import TextRevealByWord from "@/components/magicui/text-reveal";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Cover } from "@/components/ui/cover";
@@ -9,6 +10,7 @@ import {
 
 import { Bug, PencilIcon } from "lucide-react";
 import { CircleHelp } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
           />
           Faça parte de nosso programa de testers.
         </Badge>
+
         <h1 className="text-4xl tracking-tighter font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/50 select-none text-center lg:max-w-lg">
           Crie Landing Pages de Alta Conversão em Minutos
         </h1>
@@ -44,9 +47,11 @@ export default function Home() {
           </Tooltip>
         </p>
         <div className="flex items-center justify-center gap-4 ">
-          <Button variant={"blue"} className="">
-            Experimente Gratuitamente
-          </Button>
+          <Link href="/auth/signup">
+            <Button variant={"blue"} className="">
+              Experimente Gratuitamente
+            </Button>
+          </Link>
           <Button
             variant={"secondary"}
             className="hover:font-bold trasition-all "
@@ -107,7 +112,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col justify-center items-center space-y-4 py-12">
-        <div className="flex flex-col space-y-2 justify-center items-center ">
+        <div className="flex flex-col space-y-2 justify-center items-center mb-6">
           <CircleHelp className="text-primary" size={58} />
 
           <h1 className="text-3xl max-w-md md:max-w-full lg:max-w-full text-center font-semibold tracking-tight">
