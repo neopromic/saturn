@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Infinity as Logo } from "lucide-react";
+import Link from "next/link";
 
 const SignUpPage = () => {
 	return (
@@ -39,8 +40,13 @@ const SignUpPage = () => {
 					Ao clicar em criar conta, você aceita nossos termos de serviço e
 					termos de uso.
 				</p>
-				<div className="flex gap-4">
+				<div className="space-y-2">
 					<Button className="w-full">Criar conta</Button>
+					<Link href="/auth/signin">
+						<Button variant={"link"} className="w-full text-center">
+							Entrar em uma conta existente
+						</Button>
+					</Link>
 				</div>
 			</form>
 		</div>
