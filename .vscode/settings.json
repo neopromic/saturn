@@ -5,6 +5,8 @@
         "Prisma - DB",
         "New Page/Route"
     ],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome",
     "cSpell.words": [
         "adicionar",
         "arrasta",
