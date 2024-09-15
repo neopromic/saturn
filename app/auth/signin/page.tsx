@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Infinity as Logo } from "lucide-react";
+import Link from "next/link";
 
 const SignInPage = () => {
 	return (
@@ -40,9 +41,11 @@ const SignInPage = () => {
 					<p className="text-muted-foreground w-full text-center text-xs my-2">
 						Ou...
 					</p>
-					<Button variant={"link"} className="w-full text-center">
-						Criar minha conta
-					</Button>
+					<Link href={"/auth/signup"}>
+						<Button variant={"link"} className="w-full text-center">
+							Criar minha conta
+						</Button>
+					</Link>
 				</div>
 			</form>
 		</div>
