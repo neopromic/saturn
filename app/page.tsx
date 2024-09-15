@@ -113,7 +113,6 @@ export default function Home() {
 
       <section className="flex flex-col justify-center items-center space-y-4 py-12">
         <div className="flex flex-col space-y-2 justify-center items-center mb-6">
-          <CircleHelp className="text-primary" size={58} />
 
           <h1 className="text-3xl max-w-md md:max-w-full lg:max-w-full text-center font-semibold tracking-tight">
             Como nossa plataforma funciona?
