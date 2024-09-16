@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<section>
-			<section className="flex h-[60vh] flex-col items-center justify-center space-y-4 px-4 py-12 lg:h-[calc(100vh-3rem)]">
+			<section className="flex h-[calc(100vh-3rem)] flex-col items-center justify-center space-y-4 px-4 py-12">
 				<RetroGrid className="h-[calc(100vh-3rem)]" />
 				<Badge className="gap-2">
 					<Bug
@@ -54,7 +54,7 @@ export default function Home() {
 					</Link>
 				</div>
 			</section>
-			<section className="flex flex-col items-center justify-center space-y-2 bg-muted px-4 py-12">
+			<section className="flex h-[100vh] flex-col items-center justify-center space-y-2 bg-muted px-4 py-12">
 				<Cover>
 					<h2 className="px-4 text-center text-xl font-bold">
 						Recursos poderosos
@@ -66,7 +66,7 @@ export default function Home() {
 					um jogo de criança.
 				</p>
 				<div className="flex flex-col gap-4 sm:flex-col md:flex-row lg:flex-row">
-					<div className="flex flex-col items-center gap-2 rounded-md bg-background p-2 transition-all hover:cursor-pointer hover:bg-background/90">
+					<div className="flex flex-col items-center gap-2 rounded-md border border-background p-2 transition-all hover:cursor-pointer">
 						<div className="flex items-center gap-2">
 							<PencilIcon className="text-primary" size={18} />
 							<h2 className="truncate font-semibold">Modelos incríveis</h2>
