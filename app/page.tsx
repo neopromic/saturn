@@ -1,3 +1,4 @@
+import { BentoGridDemo } from "@/components/BentoGridDemo";
 import RetroGrid from "@/components/magicui/retro-grid";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -54,7 +55,7 @@ export default function Home() {
 					</Link>
 				</div>
 			</section>
-			<section className="flex h-[100vh] flex-col items-center justify-center space-y-2 bg-muted px-4 py-12">
+			<section className="flex min-h-[100vh] flex-col items-center justify-center space-y-2 bg-muted px-4 py-12">
 				<Cover>
 					<h2 className="px-4 text-center text-xl font-bold">
 						Recursos poderosos
@@ -66,42 +67,7 @@ export default function Home() {
 					um jogo de criança.
 				</p>
 				<div className="flex flex-col gap-4 sm:flex-col md:flex-row lg:flex-row">
-					<div className="flex flex-col items-center gap-2 rounded-md border border-background p-2 transition-all hover:cursor-pointer">
-						<div className="flex items-center gap-2">
-							<PencilIcon className="text-primary" size={18} />
-							<h2 className="truncate font-semibold">Modelos incríveis</h2>
-						</div>
-						<div className="max-w-64 md:max-w-32 lg:max-w-32">
-							<p className="max-w-xs text-center text-sm text-muted-foreground">
-								Escolha entre uma variedade de modelos lindamente projetados
-								para criar landing pages profissionais.
-							</p>
-						</div>
-					</div>
-					<div className="flex flex-col items-center gap-4 rounded-md bg-background p-4 transition-all hover:cursor-pointer hover:bg-background/90">
-						<div className="flex items-center gap-2">
-							<PencilIcon className="text-primary" size={18} />
-							<h2 className="truncate font-semibold">Drag and Drop</h2>
-						</div>
-						<div className="max-w-64 md:max-w-32 lg:max-w-32">
-							<p className="max-w-xs text-center text-sm text-muted-foreground">
-								Arraste e solte elementos para criar layouts personalizados sem
-								escrever uma linha de código.
-							</p>
-						</div>
-					</div>
-					<div className="flex flex-col items-center gap-2 rounded-md bg-background p-2 transition-all hover:cursor-pointer hover:bg-background/90">
-						<div className="flex items-center gap-2">
-							<PencilIcon className="text-primary" size={18} />
-							<h2 className="truncate font-medium">Publicação rápida</h2>
-						</div>
-						<div className="max-w-64 md:max-w-32 lg:max-w-32">
-							<p className="max-w-xs text-center text-sm text-muted-foreground">
-								Publique suas landing pages com um clique e comece a receber
-								leads imediatamente.
-							</p>
-						</div>
-					</div>
+					<BentoGridDemo />
 				</div>
 			</section>
 
