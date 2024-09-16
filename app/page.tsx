@@ -3,9 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Cover } from "@/components/ui/cover";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
+	Tooltip,
+	TooltipContent,
+	TooltipTrigger,
 } from "@/components/ui/tooltip";
 
 import { Bug, PencilIcon } from "lucide-react";
@@ -13,160 +13,153 @@ import { CircleHelp } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
-  return (
-    <section>
-      <section className="flex flex-col px-4 space-y-4 py-12 lg:h-[80vh] h-[55vh] justify-center items-center">
-        <Badge className="gap-2">
-          <Bug
-            size={16}
-            className="dark:text-blue-charcoal-500 text-blue-charcoal-400"
-          />
-          Faça parte de nosso programa de testers.
-        </Badge>
+	return (
+		<section>
+			<section className="flex h-[60vh] flex-col items-center justify-center space-y-4 px-4 py-12 lg:h-[80vh]">
+				<Badge className="gap-2">
+					<Bug
+						size={16}
+						className="text-blue-charcoal-400 dark:text-blue-charcoal-500"
+					/>
+					Faça parte de nosso programa de testers.
+				</Badge>
 
-        <h1 className="text-4xl tracking-tighter font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/50 select-none text-center lg:max-w-lg">
-          Crie Landing Pages de Alta Conversão em Minutos
-        </h1>
-        <p className="text-muted-foreground text-sm text-center max-w-80">
-          Dê vida às suas ideias e aumente suas conversões com facilidade. Nossa
-          ferramenta permite que você construa páginas poderosas e envolventes
-          com um simples{" "}
-          <Tooltip>
-            <TooltipTrigger>
-              <span className="underline hover:tracking-wider hover:text-primary hover:cursor-help hover:select-none transition-all">
-                arrastar e soltar.
-              </span>
-            </TooltipTrigger>
-            <TooltipContent className="max-w-md lg:max-w-full">
-              <p>
-                Nosso sistema de arrastar e soltar permite que você crie landing
-                pages impressionantes de maneira fácil e intuitiva, sem
-                complicações!
-              </p>
-            </TooltipContent>
-          </Tooltip>
-        </p>
-        <div className="flex items-center justify-center gap-4 ">
-          <Link href="/auth/signup">
-            <Button variant={"blue"} className="">
-              Experimente Gratuitamente
-            </Button>
-          </Link>
-          <Button
-            variant={"secondary"}
-            className="hover:font-bold trasition-all "
-          >
-            Ver demonstração
-          </Button>
-        </div>
-      </section>
-      <section className="bg-muted px-4 py-12 flex flex-col justify-center items-center space-y-2">
-        <Cover>
-          <h2 className="font-bold text-xl text-center px-4">
-            Recursos poderosos
-          </h2>
-        </Cover>
-        <p className="text-center text-muted-foreground max-w-md">
-          Nosso editor de arrastar e soltar, combinado com uma biblioteca de
-          modelos incríveis, torna a criação de landing pages tão fácil quanto
-          um jogo de criança.
-        </p>
-        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row gap-4">
-          <div className="flex flex-col items-center bg-background rounded-md p-2 gap-2 hover:bg-background/90 hover:cursor-pointer transition-all">
-            <div className="flex items-center gap-2">
-              <PencilIcon className="text-primary" size={18} />
-              <h2 className="truncate font-semibold">Modelos incríveis</h2>
-            </div>
-            <div className="max-w-64 md:max-w-32 lg:max-w-32">
-              <p className="text-muted-foreground text-sm text-center max-w-xs">
-                Escolha entre uma variedade de modelos lindamente projetados
-                para criar landing pages profissionais.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center bg-background rounded-md p-4 gap-4 hover:bg-background/90 hover:cursor-pointer transition-all">
-            <div className="flex items-center gap-2">
-              <PencilIcon className="text-primary" size={18} />
-              <h2 className="truncate font-semibold">Drag and Drop</h2>
-            </div>
-            <div className="max-w-64 md:max-w-32 lg:max-w-32">
-              <p className="text-muted-foreground text-sm text-center max-w-xs">
-                Arraste e solte elementos para criar layouts personalizados sem
-                escrever uma linha de código.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center bg-background rounded-md p-2 gap-2 hover:bg-background/90 hover:cursor-pointer transition-all">
-            <div className="flex items-center gap-2">
-              <PencilIcon className="text-primary" size={18} />
-              <h2 className="truncate font-medium">Publicação rápida</h2>
-            </div>
-            <div className="max-w-64 md:max-w-32 lg:max-w-32">
-              <p className="text-muted-foreground text-sm text-center max-w-xs">
-                Publique suas landing pages com um clique e comece a receber
-                leads imediatamente.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+				<h1 className="select-none bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-center text-4xl font-extrabold tracking-tighter text-transparent lg:max-w-lg">
+					Crie Landing Pages de Alta Conversão em Minutos
+				</h1>
+				<p className="max-w-80 text-center text-sm text-muted-foreground">
+					Dê vida às suas ideias e aumente suas conversões com facilidade. Nossa
+					ferramenta permite que você construa páginas poderosas e envolventes
+					com um simples{" "}
+					<Tooltip>
+						<TooltipTrigger>
+							<span className="underline transition-all hover:cursor-help hover:select-none hover:tracking-wider hover:text-primary">
+								arrastar e soltar.
+							</span>
+						</TooltipTrigger>
+						<TooltipContent className="max-w-md lg:max-w-full">
+							<p>
+								Nosso sistema de arrastar e soltar permite que você crie landing
+								pages impressionantes de maneira fácil e intuitiva, sem
+								complicações!
+							</p>
+						</TooltipContent>
+					</Tooltip>
+				</p>
+				<div className="flex flex-col items-center justify-center">
+					<Link href="/auth/signup">
+						<Button variant={"blue"} className="">
+							Experimente Gratuitamente
+						</Button>
+					</Link>
+				</div>
+			</section>
+			<section className="flex flex-col items-center justify-center space-y-2 bg-muted px-4 py-12">
+				<Cover>
+					<h2 className="px-4 text-center text-xl font-bold">
+						Recursos poderosos
+					</h2>
+				</Cover>
+				<p className="max-w-md text-center text-muted-foreground">
+					Nosso editor de arrastar e soltar, combinado com uma biblioteca de
+					modelos incríveis, torna a criação de landing pages tão fácil quanto
+					um jogo de criança.
+				</p>
+				<div className="flex flex-col gap-4 sm:flex-col md:flex-row lg:flex-row">
+					<div className="flex flex-col items-center gap-2 rounded-md bg-background p-2 transition-all hover:cursor-pointer hover:bg-background/90">
+						<div className="flex items-center gap-2">
+							<PencilIcon className="text-primary" size={18} />
+							<h2 className="truncate font-semibold">Modelos incríveis</h2>
+						</div>
+						<div className="max-w-64 md:max-w-32 lg:max-w-32">
+							<p className="max-w-xs text-center text-sm text-muted-foreground">
+								Escolha entre uma variedade de modelos lindamente projetados
+								para criar landing pages profissionais.
+							</p>
+						</div>
+					</div>
+					<div className="flex flex-col items-center gap-4 rounded-md bg-background p-4 transition-all hover:cursor-pointer hover:bg-background/90">
+						<div className="flex items-center gap-2">
+							<PencilIcon className="text-primary" size={18} />
+							<h2 className="truncate font-semibold">Drag and Drop</h2>
+						</div>
+						<div className="max-w-64 md:max-w-32 lg:max-w-32">
+							<p className="max-w-xs text-center text-sm text-muted-foreground">
+								Arraste e solte elementos para criar layouts personalizados sem
+								escrever uma linha de código.
+							</p>
+						</div>
+					</div>
+					<div className="flex flex-col items-center gap-2 rounded-md bg-background p-2 transition-all hover:cursor-pointer hover:bg-background/90">
+						<div className="flex items-center gap-2">
+							<PencilIcon className="text-primary" size={18} />
+							<h2 className="truncate font-medium">Publicação rápida</h2>
+						</div>
+						<div className="max-w-64 md:max-w-32 lg:max-w-32">
+							<p className="max-w-xs text-center text-sm text-muted-foreground">
+								Publique suas landing pages com um clique e comece a receber
+								leads imediatamente.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section className="flex flex-col justify-center items-center space-y-4 py-12">
-        <div className="flex flex-col space-y-2 justify-center items-center mb-6">
-
-          <h1 className="text-3xl max-w-md md:max-w-full lg:max-w-full text-center font-semibold tracking-tight">
-            Como nossa plataforma funciona?
-          </h1>
-        </div>
-        <div className="flex flex-col space-y-2 items-center justify-center ">
-          <div className="rounded-full p-4 text-xl bg-blue-charcoal-500 text-blue-charcoal-50 size-12 flex items-center justify-center ">
-            1
-          </div>
-          <h2 className="text-lg font-medium">
-            Escolha um template {"(Ou use nossa IA)"}.
-          </h2>
-          <p className="max-w-64 text-center text-muted-foreground text-sm">
-            Comece com um de nossos templates profissionais ou um em branco pra
-            criar algo incrível do zero!
-          </p>
-        </div>
-        <div className="flex flex-col space-y-2 items-center justify-center ">
-          <div className="rounded-full p-4 text-xl bg-blue-charcoal-500 text-blue-charcoal-50 size-12 flex items-center justify-center ">
-            2
-          </div>
-          <h2 className="text-lg font-medium">Personalize do seu jeito.</h2>
-          <p className="max-w-64 text-center text-muted-foreground text-sm">
-            Use nosso editor arrasta e solta pra adicionar seu conteúdo,
-            imagens, e sua marca.
-          </p>
-        </div>
-        <div className="flex flex-col space-y-2 items-center justify-center ">
-          <div className="rounded-full p-4 text-xl bg-blue-charcoal-500 text-blue-charcoal-50 size-12 flex items-center justify-center ">
-            3
-          </div>
-          <h2 className="text-lg font-medium">Publique seu site.</h2>
-          <p className="max-w-64 text-center text-muted-foreground text-sm">
-            Com um clique, sua landing page está ativa e pronta pra converter.
-          </p>
-        </div>
-      </section>
-      <section className="mt-12 p-4">
-        <p className="text-muted-foreground text-xs flex flex-col justify-center items-center text-center">
-          © 2024 Saturn Landing Page Builder | Creattek. Todos os direitos
-          reservados.
-        </p>
-        <div className="flex flex-row justify-center items-center">
-          <Button variant={"link"} size={"sm"} className="text-xs">
-            Termos de uso
-          </Button>
-          <Button variant={"link"} size={"sm"} className="text-xs">
-            Política de privacidade
-          </Button>
-          <Button variant={"link"} size={"sm"} className="text-xs">
-            Contatos
-          </Button>
-        </div>
-      </section>
-    </section>
-  );
+			<section className="flex flex-col items-center justify-center space-y-4 py-12">
+				<div className="mb-6 flex flex-col items-center justify-center space-y-2">
+					<h1 className="max-w-md text-center text-3xl font-semibold tracking-tight md:max-w-full lg:max-w-full">
+						Como nossa plataforma funciona?
+					</h1>
+				</div>
+				<div className="flex flex-col items-center justify-center space-y-2">
+					<div className="flex size-12 items-center justify-center rounded-full bg-blue-charcoal-500 p-4 text-xl text-blue-charcoal-50">
+						1
+					</div>
+					<h2 className="text-lg font-medium">
+						Escolha um template {"(Ou use nossa IA)"}.
+					</h2>
+					<p className="max-w-64 text-center text-sm text-muted-foreground">
+						Comece com um de nossos templates profissionais ou um em branco pra
+						criar algo incrível do zero!
+					</p>
+				</div>
+				<div className="flex flex-col items-center justify-center space-y-2">
+					<div className="flex size-12 items-center justify-center rounded-full bg-blue-charcoal-500 p-4 text-xl text-blue-charcoal-50">
+						2
+					</div>
+					<h2 className="text-lg font-medium">Personalize do seu jeito.</h2>
+					<p className="max-w-64 text-center text-sm text-muted-foreground">
+						Use nosso editor arrasta e solta pra adicionar seu conteúdo,
+						imagens, e sua marca.
+					</p>
+				</div>
+				<div className="flex flex-col items-center justify-center space-y-2">
+					<div className="flex size-12 items-center justify-center rounded-full bg-blue-charcoal-500 p-4 text-xl text-blue-charcoal-50">
+						3
+					</div>
+					<h2 className="text-lg font-medium">Publique seu site.</h2>
+					<p className="max-w-64 text-center text-sm text-muted-foreground">
+						Com um clique, sua landing page está ativa e pronta pra converter.
+					</p>
+				</div>
+			</section>
+			<section className="mt-12 p-4">
+				<p className="flex flex-col items-center justify-center text-center text-xs text-muted-foreground">
+					© 2024 Saturn Landing Page Builder | Creattek. Todos os direitos
+					reservados.
+				</p>
+				<div className="flex flex-row items-center justify-center">
+					<Button variant={"link"} size={"sm"} className="text-xs">
+						Termos de uso
+					</Button>
+					<Button variant={"link"} size={"sm"} className="text-xs">
+						Política de privacidade
+					</Button>
+					<Button variant={"link"} size={"sm"} className="text-xs">
+						Contatos
+					</Button>
+				</div>
+			</section>
+		</section>
+	);
 }
