@@ -158,6 +158,16 @@ const SkeletonThree = () => {
 		</motion.div>
 	);
 };
+
+const SkeletonDragNDrop = () => {
+	return (
+		<main className="flex flex-col items-center justify-center">
+			<div className="border size-12 rounded-full translate-y-2" />
+			<div className="border size-12 rounded bg-background z-10 rotate-45" />
+			<div className="border size-12 rounded rotate-45 bg-white -translate-y-2" />
+		</main>
+	);
+};
 const SkeletonFour = () => {
 	const first = {
 		initial: {
@@ -312,10 +322,10 @@ const items = [
 		icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
 	},
 	{
-		title: "Automated Proofreading",
+		title: "Altamente personalizado",
 		description: (
 			<span className="text-sm">
-				Let AI handle the proofreading of your documents.
+				Personalize suas páginas da sua maneira! Gere conteúdos usando IA.
 			</span>
 		),
 		header: <SkeletonTwo />,
@@ -323,13 +333,14 @@ const items = [
 		icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
 	},
 	{
-		title: "Contextual Suggestions",
+		title: "Arrasta e solta",
 		description: (
 			<span className="text-sm">
-				Get AI-powered suggestions based on your writing context.
+				Desenvolva páginas incríveis com facilidade usando nosso editor. <br />
+				<span className="font-semibold"> Edite, visualize, publique.</span>
 			</span>
 		),
-		header: <SkeletonThree />,
+		header: <SkeletonDragNDrop />,
 		className: "md:col-span-1",
 		icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
 	},
