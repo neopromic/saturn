@@ -8,7 +8,9 @@ export const ActionRow = () => {
 			<ModeToggle />
 			<Link href={"/dashboard"}>
 				<Avatar>
-					<AvatarFallback>W</AvatarFallback>
+					<AvatarFallback className="border border-blue-charcoal-500">
+						W
+					</AvatarFallback>
 				</Avatar>
 			</Link>
 		</div>
