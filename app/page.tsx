@@ -1,4 +1,4 @@
-import TextRevealByWord from "@/components/magicui/text-reveal";
+import RetroGrid from "@/components/magicui/retro-grid";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Cover } from "@/components/ui/cover";
@@ -9,13 +9,13 @@ import {
 } from "@/components/ui/tooltip";
 
 import { Bug, PencilIcon } from "lucide-react";
-import { CircleHelp } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
 	return (
 		<section>
-			<section className="flex h-[60vh] flex-col items-center justify-center space-y-4 px-4 py-12 lg:h-[80vh]">
+			<section className="flex h-[60vh] flex-col items-center justify-center space-y-4 px-4 py-12 lg:h-[calc(100vh-3rem)]">
+				<RetroGrid className="h-[calc(100vh-3rem)]" />
 				<Badge className="gap-2">
 					<Bug
 						size={16}
@@ -24,7 +24,7 @@ export default function Home() {
 					Faça parte de nosso programa de testers.
 				</Badge>
 
-				<h1 className="select-none bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-center text-4xl font-extrabold tracking-tighter text-transparent lg:max-w-lg">
+				<h1 className="select-none bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-center text-4xl font-extrabold tracking-tighter text-transparent lg:max-w-5xl lg:text-6xl">
 					Crie Landing Pages de Alta Conversão em Minutos
 				</h1>
 				<p className="max-w-80 text-center text-sm text-muted-foreground">
