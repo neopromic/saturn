@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const FooterLayout = () => {
 	return (
@@ -14,9 +15,11 @@ export const FooterLayout = () => {
 				<Button variant={"link"} size={"sm"} className="text-xs">
 					Política de privacidade
 				</Button>
-				<Button variant={"link"} size={"sm"} className="text-xs">
-					Contatos
-				</Button>
+				<Link href="/contacts">
+					<Button variant={"link"} size={"sm"} className="text-xs">
+						Contatos
+					</Button>
+				</Link>
 			</div>
 		</section>
 	);
