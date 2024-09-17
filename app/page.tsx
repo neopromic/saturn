@@ -1,20 +1,20 @@
-import { BentoGridDemo } from "@/components/BentoGridDemo";
+import { BentoGridLayout } from "@/components/BentoGridDemo";
 import RetroGrid from "@/components/magicui/retro-grid";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Cover } from "@/components/ui/cover";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { IconArrowBadgeDownFilled } from "@tabler/icons-react";
 
 import { Bug, PencilIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
 	return (
-		<section>
+		<section className="scroll-smooth">
 			<section className="flex h-[calc(100vh-3rem)] flex-col items-center justify-center space-y-4 px-4 py-12">
 				<RetroGrid className="h-[calc(100vh-3rem)]" />
 				<Badge className="gap-2">
@@ -54,6 +54,9 @@ export default function Home() {
 						</Button>
 					</Link>
 				</div>
+				<div className="h-full flex relative animate-pulse">
+					<IconArrowBadgeDownFilled className="absolute bottom-0 text-blue-charcoal-500" />
+				</div>
 			</section>
 			<section className="flex min-h-[100vh] flex-col items-center justify-center space-y-2 bg-muted px-4 py-12">
 				<h2 className="px-4 text-center text-3xl font-bold">
@@ -65,7 +68,7 @@ export default function Home() {
 					um jogo de criança.
 				</p>
 				<div className="flex flex-col gap-4 sm:flex-col md:flex-row lg:flex-row">
-					<BentoGridDemo />
+					<BentoGridLayout />
 				</div>
 			</section>
 
