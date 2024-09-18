@@ -110,7 +110,7 @@ const SkeletonTwo = () => {
 			initial="initial"
 			animate="animate"
 			whileHover="hover"
-			className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+			className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2]  flex-col space-y-2"
 		>
 			{arr.map((_, i) => (
 				<motion.div
@@ -162,7 +162,7 @@ const SkeletonThree = () => {
 const SkeletonDragNDrop = () => {
 	return (
 		<main className="flex flex-col items-center justify-center">
-			<div className="border size-12 rounded-full translate-y-2" />
+			<div className="border size-12 rounded-full translate-y-2 bg-blue-charcoal-500" />
 			<div className="border size-12 rounded bg-background z-10 rotate-45" />
 			<div className="border size-12 rounded rotate-45 bg-white -translate-y-2" />
 		</main>
