@@ -29,21 +29,7 @@ export const HeroLayout = () => {
 			<p className="max-w-80 text-center text-sm text-muted-foreground">
 				Dê vida às suas ideias e aumente suas conversões com facilidade. Nossa
 				ferramenta permite que você construa páginas poderosas e envolventes com
-				um simples{" "}
-				<Tooltip>
-					<TooltipTrigger>
-						<span className="underline transition-all hover:cursor-help hover:select-none hover:tracking-wider hover:text-primary">
-							arrastar e soltar.
-						</span>
-					</TooltipTrigger>
-					<TooltipContent className="max-w-md lg:max-w-full">
-						<p>
-							Nosso sistema de arrastar e soltar permite que você crie landing
-							pages impressionantes de maneira fácil e intuitiva, sem
-							complicações!
-						</p>
-					</TooltipContent>
-				</Tooltip>
+				um simples <span className="font-bold"> arrastar e soltar.</span>
 			</p>
 			<div className="flex flex-col items-center justify-center">
 				<Link href="/auth/signup">
@@ -52,7 +38,7 @@ export const HeroLayout = () => {
 					</Button>
 				</Link>
 			</div>
-			<div className="h-full flex relative animate-pulse">
+			<div className="relative flex h-full animate-pulse">
 				<IconArrowBadgeDownFilled className="absolute bottom-0 text-blue-charcoal-500" />
 			</div>
 		</section>
