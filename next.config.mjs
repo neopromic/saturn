@@ -5,7 +5,12 @@ const nextConfig = {
       protocol: "https",
       hostname: "pbs.twimg.com"
     }]
-  }
+  },
+  i18n: {
+    defaultLocale: 'pt-BR',
+    locales: ["pt-BR", "en"],
+  },
+
 };
 
 export default nextConfig;
