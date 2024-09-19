@@ -6,7 +6,7 @@ export const HowWeWork = () => {
 					Como nossa plataforma funciona?
 				</h1>
 			</div>
-			<div className="items-center gap-2 space-y-4 lg:flex">
+			<div className="items-center justify-center gap-2 space-y-4 lg:flex lg:space-y-0">
 				<div className="flex flex-col items-center justify-center space-y-2">
 					<div className="flex size-12 items-center justify-center rounded-full bg-blue-charcoal-500 p-4 text-xl text-blue-charcoal-50">
 						1
