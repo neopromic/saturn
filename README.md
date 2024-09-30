@@ -22,7 +22,7 @@ Saturn é um SaaS projetado para oferecer uma experiência intuitiva e eficiente
 - **Banco de Dados**: [MongoDB](https://www.mongodb.com/), [PostgresSQL](https://www.postgresql.org/)
 - **Autenticação**: [Auth0](https://auth0.com/)
 - **Hospedagem e Infraestrutura**: [Vercel](https://vercel.com/), [AWS](https://aws.amazon.com/)
-- **Outras**: [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), **Jest**
+- **Outras**: [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), [Jest](https://jestjs.io/pt-BR/)
 
 ## 🎯 Público-Alvo
 
